@@ -116,6 +116,64 @@
     @media(max-width:900px){.game-grid{grid-template-columns:repeat(3,1fr)}.navlinks{gap:13px}.hero{padding:38px}.feature-strip{grid-template-columns:1fr}}
     @media(max-width:680px){.shell{width:min(100% - 26px,1180px)}.nav{height:66px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;padding:15px 20px 20px;background:#0e0e1d;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks button{text-align:left;padding:11px}.profile-btn{margin-left:0}.hero{min-height:350px;padding:27px 22px;margin-top:20px}.hero:before{right:-100px;top:5px;opacity:.65}.hero h1{font-size:43px}.hero-note{display:none}.game-grid{grid-template-columns:repeat(2,1fr);gap:11px}.cover{height:125px}.cover-art{font-size:48px}.game-info{padding:11px}.game-title{font-size:12px}.news-grid,.review-grid{grid-template-columns:1fr}.trailer-list{grid-template-columns:1fr}.section-head h2{font-size:21px}.feature-box{padding:20px}.mini-stats{gap:18px}.profile-panel{padding:21px}.footer-inner{align-items:flex-start;flex-direction:column}}
     @media(max-width:390px){.game-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:37px}.profile-btn{padding:10px 11px;font-size:10px}}
+
+    /* GAMEZONE visual refresh: more energy, depth and motion */
+    :root{--bg:#080711;--panel:#121020;--panel2:#1b1730;--line:rgba(190,164,255,.16);--text:#fbf9ff;--muted:#aaa4c5;--purple:#9b5cff;--pink:#ff4fc8;--cyan:#48e4ff;--green:#6df5bd;--radius:22px}
+    body{background:radial-gradient(ellipse at 82% 4%,rgba(123,65,255,.23),transparent 34%),radial-gradient(ellipse at 5% 40%,rgba(255,57,173,.09),transparent 28%),#080711}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(180,155,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(180,155,255,.07) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 78%)}
+    .topbar{background:rgba(8,7,17,.88);border-bottom-color:rgba(171,126,255,.18);box-shadow:0 8px 35px rgba(0,0,0,.22)}
+    .brand-mark{box-shadow:0 0 0 4px rgba(155,92,255,.12),0 0 28px rgba(255,79,200,.28)}
+    .hero{min-height:430px;margin:28px 0 30px;padding:52px 48px;border:1px solid rgba(190,148,255,.27);background:linear-gradient(112deg,#100d22 0%,#21113d 48%,#321047 100%);box-shadow:0 25px 75px rgba(58,20,108,.24),inset 0 1px rgba(255,255,255,.08)}
+    .hero:before{display:none}.hero:after{width:410px;height:410px;right:20%;bottom:-310px;background:#743aff;opacity:.22;filter:blur(35px)}
+    .hero-content{max-width:56%;z-index:4}
+    .eyebrow{background:linear-gradient(90deg,rgba(155,92,255,.2),rgba(255,79,200,.13));border-color:rgba(204,166,255,.35);box-shadow:0 0 24px rgba(155,92,255,.1)}
+    .hero h1{font-size:clamp(42px,5.6vw,70px);text-shadow:0 8px 35px rgba(0,0,0,.28)}
+    .gradient-text{background:linear-gradient(95deg,#c5a4ff 0%,#ff91dc 48%,#75eaff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:#d0c6e9}
+    .primary-btn{background:linear-gradient(105deg,#7848ff,#c33bdb 58%,#f24cae);box-shadow:0 9px 25px rgba(160,67,255,.28),inset 0 1px rgba(255,255,255,.2)}
+    .ghost-btn{background:rgba(255,255,255,.075);border-color:rgba(218,194,255,.22)}
+    .hero-visual{position:absolute;right:2.5%;top:50%;transform:translateY(-50%);width:42%;height:86%;z-index:2;pointer-events:none}
+    .showcase-main{position:absolute;right:4%;top:9%;width:min(365px,88%);height:278px;border:1px solid rgba(255,255,255,.28);border-radius:25px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(0,0,0,.42),0 0 55px rgba(177,93,255,.23);backdrop-filter:blur(10px);transform:rotate(4deg);animation:showcaseFloat 6s ease-in-out infinite}
+    .showcase-main:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 68% 34%,rgba(255,189,119,.95),transparent 11%),linear-gradient(155deg,transparent 38%,rgba(255,94,185,.25) 39%,transparent 70%);pointer-events:none}
+    .showcase-top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:17px 18px;color:#eee5ff;font-size:9px;font-weight:900;letter-spacing:1.6px}
+    .showcase-live{display:inline-flex;align-items:center;gap:7px}.showcase-live:before{content:"";width:7px;height:7px;border-radius:50%;background:#73ffc4;box-shadow:0 0 12px #73ffc4}
+    .showcase-scene{position:absolute;inset:47px 0 59px;overflow:hidden;background:linear-gradient(165deg,#3f225f 0%,#d45b9b 48%,#ffb36f 72%,#4b245f 100%)}
+    .showcase-scene:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(17,8,34,.9),transparent 55%),repeating-linear-gradient(115deg,transparent 0 34px,rgba(255,255,255,.07) 35px 36px)}
+    .scene-sun{position:absolute;width:110px;height:110px;right:48px;top:10px;border-radius:50%;background:linear-gradient(145deg,#fff0b4,#ff7d9f);box-shadow:0 0 55px rgba(255,194,145,.7)}
+    .scene-palm{position:absolute;right:25px;top:8px;font-size:116px;filter:drop-shadow(0 10px 12px #32113b);transform:rotate(8deg)}
+    .scene-car{position:absolute;left:34px;bottom:7px;font-size:94px;filter:drop-shadow(0 12px 10px rgba(0,0,0,.5));transform:rotate(-7deg)}
+    .showcase-bottom{position:absolute;z-index:2;left:18px;right:18px;bottom:14px;display:flex;justify-content:space-between;align-items:end}
+    .showcase-bottom small{display:block;color:#d4bde9;font-size:8px;letter-spacing:1.7px;font-weight:900;margin-bottom:5px}
+    .showcase-bottom strong{font-size:18px;line-height:1.03;letter-spacing:.4px}
+    .showcase-arrow{width:35px;height:35px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#a75aff,#f24cae);font-size:19px;box-shadow:0 0 25px rgba(220,83,255,.4)}
+    .float-tag{position:absolute;z-index:3;padding:10px 13px;border-radius:13px;background:rgba(19,13,38,.84);border:1px solid rgba(232,190,255,.28);box-shadow:0 12px 30px rgba(0,0,0,.3);backdrop-filter:blur(12px);font-size:9px;font-weight:900;letter-spacing:1px;white-space:nowrap}
+    .tag-top{top:4%;right:0;color:#7cf7d0;transform:rotate(-7deg);animation:tagFloat 5s ease-in-out infinite}
+    .tag-bottom{bottom:1%;left:1%;color:#ffdc88;transform:rotate(-5deg);animation:tagFloat 5.8s ease-in-out infinite reverse}
+    @keyframes showcaseFloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
+    @keyframes tagFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+    .pulse-bar{display:flex;align-items:center;gap:18px;overflow:hidden;margin:0 0 42px;padding:14px 17px;border:1px solid rgba(185,145,255,.2);border-radius:15px;background:linear-gradient(90deg,rgba(123,69,255,.16),rgba(255,76,193,.08),rgba(62,213,255,.08))}
+    .pulse-label{display:flex;align-items:center;gap:8px;flex:none;color:#e9dfff;font-size:9px;font-weight:900;letter-spacing:1.5px}
+    .pulse-label:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff5fb8;box-shadow:0 0 13px #ff5fb8}
+    .pulse-items{display:flex;align-items:center;gap:25px;min-width:max-content;color:#bdb3d5;font-size:10px;font-weight:800;letter-spacing:.7px;animation:pulseMove 22s linear infinite}
+    .pulse-items span:before{content:"✦";color:#b88bff;margin-right:8px}
+    @keyframes pulseMove{from{transform:translateX(0)}to{transform:translateX(-35%)}}
+    .section-head{margin-bottom:22px}.section-head h2{font-size:26px}.section-head p{font-size:12px}
+    .game-grid{gap:18px}
+    .game-card{background:linear-gradient(155deg,rgba(29,23,49,.98),rgba(14,13,27,.98));border-color:rgba(188,157,255,.15);box-shadow:0 12px 28px rgba(0,0,0,.12)}
+    .game-card:hover{transform:translateY(-8px) scale(1.012);border-color:rgba(202,153,255,.6);box-shadow:0 20px 42px rgba(75,29,131,.25),0 0 0 1px rgba(194,141,255,.1)}
+    .cover{height:178px}
+    .cover:before{width:205px;height:205px;right:-18px;top:-58px;filter:blur(3px);opacity:.9}
+    .cover-art{font-size:72px;right:22px;top:20px;filter:drop-shadow(0 13px 18px rgba(0,0,0,.42));transition:transform .3s}
+    .game-card:hover .cover-art{transform:rotate(2deg) scale(1.13)}
+    .game-info{padding:15px}.card-open{background:linear-gradient(100deg,rgba(139,92,246,.15),rgba(236,72,153,.1));border-color:rgba(190,151,255,.17)}
+    .feature-box{position:relative;overflow:hidden;background:linear-gradient(130deg,rgba(112,67,207,.24),rgba(25,22,45,.92));border-color:rgba(183,143,255,.2);box-shadow:0 15px 40px rgba(0,0,0,.13)}
+    .feature-box:after{content:"✦";position:absolute;right:22px;top:12px;color:rgba(211,173,255,.17);font-size:72px;transform:rotate(12deg)}
+    .news-card,.trailer-card,.review-card{border-color:rgba(184,149,255,.16);box-shadow:0 12px 30px rgba(0,0,0,.13);transition:transform .22s,border-color .22s,box-shadow .22s}
+    .news-card:hover,.trailer-card:hover,.review-card:hover{transform:translateY(-5px);border-color:rgba(194,151,255,.42);box-shadow:0 18px 36px rgba(70,29,120,.2)}
+    .profile-btn{box-shadow:0 8px 22px rgba(149,73,239,.23)}
+    @media(max-width:900px){.hero{padding:38px 32px}.hero-content{max-width:61%}.hero-visual{right:0;width:43%}.showcase-main{height:245px}.scene-palm{font-size:95px}.scene-car{font-size:78px}.cover{height:160px}}
+    @media(max-width:680px){.hero{min-height:390px;padding:27px 22px}.hero-content{max-width:100%}.hero-visual{right:-32px;top:auto;bottom:-5px;transform:none;width:57%;height:57%;opacity:.48}.showcase-main{right:0;top:0;width:100%;height:190px}.showcase-top{padding:10px 12px;font-size:7px}.showcase-scene{inset:32px 0 48px}.scene-sun{width:70px;height:70px;right:25px}.scene-palm{font-size:68px;right:10px}.scene-car{font-size:60px;left:15px}.showcase-bottom{left:12px;right:12px;bottom:8px}.showcase-bottom strong{font-size:13px}.showcase-bottom small{font-size:6px}.showcase-arrow{width:27px;height:27px}.float-tag{display:none}.pulse-bar{gap:12px;margin-bottom:32px;padding:12px}.pulse-label{font-size:8px}.pulse-items{font-size:9px;gap:18px}.cover{height:135px}.cover-art{font-size:54px}.section-head h2{font-size:22px}}
+
   </style>
 </head>
 <body>
@@ -143,9 +201,19 @@
           <p>Добро пожаловать в GAMEZONE — место, где собраны игры, игровые новости, трейлеры и обзоры. Найди свою следующую любимую игру!</p>
           <div class="hero-actions"><button class="primary-btn" data-go="games">Смотреть игры <span>→</span></button><button class="ghost-btn" data-go="news">Последние новости</button></div>
         </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="showcase-main">
+            <div class="showcase-top"><span class="showcase-live">FEATURED GAME</span><span>01 / 04</span></div>
+            <div class="showcase-scene"><div class="scene-sun"></div><div class="scene-palm">🌴</div><div class="scene-car">🏎️</div></div>
+            <div class="showcase-bottom"><div><small>THIS WEEK'S SPOTLIGHT</small><strong>OPEN WORLD<br>ADVENTURES</strong></div><span class="showcase-arrow">↗</span></div>
+          </div>
+          <div class="float-tag tag-top">⚡ TRENDING NOW</div>
+          <div class="float-tag tag-bottom">★ GAMEZONE PLAYER PICK</div>
+        </div>
         <div class="hero-note">LEVEL UP YOUR WORLD</div>
       </div>
 
+      <div class="pulse-bar"><div class="pulse-label">В ТРЕНДЕ СЕЙЧАС</div><div class="pulse-items"><span>GTA VI</span><span>MINECRAFT</span><span>ROBLOX</span><span>FNAF SECURITY BREACH</span><span>FORTNITE</span><span>RED DEAD REDEMPTION 2</span><span>GTA VI</span><span>MINECRAFT</span><span>ROBLOX</span><span>FNAF SECURITY BREACH</span></div></div>
       <div class="section-head"><div><h2>⭐ Популярные игры</h2><p>Игры, которые стоит добавить в свою коллекцию</p></div><button class="text-link" data-go="games">Весь каталог →</button></div>
       <div class="game-grid" id="featuredGrid"></div>
 
